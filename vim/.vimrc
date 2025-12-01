@@ -53,6 +53,8 @@ silent! call plug#begin('~/.vim/plugged')
     Plug 'tomtom/tlib_vim' " Dependency of SnipMate
     Plug 'tpope/vim-eunuch' " :Rename, :Delete, :SudoWrite, etc.
     "Plug 'fatih/vim-go',{ 'do': ':GoInstallBinaries' }
+    Plug 'hashivim/vim-terraform'
+    Plug 'Glench/Vim-Jinja2-Syntax'
 call plug#end()
 
 " Core plugins
@@ -153,7 +155,8 @@ let g:NERDSpaceDelims = 1
 let g:netrw_banner = 0
 let g:netrw_home = $HOME.'/.cache/vim'
 let g:netrw_liststyle = 3
-
+let g:terraform_fmt_on_save=1
+let g:terraform_align=1
 let g:snipMate = { 'snippet_version' : 1 }
 
 
